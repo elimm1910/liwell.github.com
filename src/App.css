@@ -1,0 +1,24 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+body{
+  font-family: 'Bungee Inline', cursive;
+} */
+.navbar.transparent{
+  border-width: 0px;
+  -webkit-box-shadow: 0px 0px;
+  box-shadow: 0px 0px;
+  background: transparent;
+  margin: 0 !important;
+}
+.prueba{
+  text-align: right;
+  background: rgb(216, 46, 46); 
+  background: rgb(143, 4, 4); 
+  background: rgb(101, 204, 147);
+  bottom: 5%;
+  right: 3%;
+  border-top: thin;
+  border-bottom: thin;
+  background: #464141;
+  font-size: xx-large;
+  margin-bottom: 50px;
+}
