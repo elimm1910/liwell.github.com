@@ -2,6 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://elimm1910.github.io/liwell.github.com",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.1.2",
@@ -9,6 +10,7 @@
     "firebase": "^8.2.6",
     "firebase-tools": "^9.10.1",
     "framer-motion": "^3.2.1",
+    "gh-pages": "^3.1.0",
     "lodash-es": "^4.0.0",
     "mdbreact": "^4.11.1",
     "node-sass": "^5.0.0",
@@ -34,6 +36,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
