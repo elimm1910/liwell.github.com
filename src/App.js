@@ -10,7 +10,7 @@ import 'bootstrap-css-only/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { MotionLayoutProvider } from "react-motion-layout";
 
-import { auth, createUserProfileDocument } from './components/Auth/Firebase/firebaseUtil';
+// import { auth, createUserProfileDocument } from './components/Auth/Firebase/firebaseUtil';
 
 //Componentes
 import Navegacion from './components/componentesGLB/Navegacion';
@@ -26,33 +26,33 @@ import Detalles from './components/CursoOnline/Detalles/Detalles';
 
 function App() {
 
-  const [User, setUser] = useState(null);
-  var unsubscribeFromAuth = null;
-  useEffect(() => {
-    unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
-      if (userAuth) {
-        const userRef = await createUserProfileDocument(userAuth);
+  // const [User, setUser] = useState(null);
+  // var unsubscribeFromAuth = null;
+  // useEffect(() => {
+  //   unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
+  //     if (userAuth) {
+  //       const userRef = await createUserProfileDocument(userAuth);
 
-        userRef.onSnapshot(snapShot => {
-          setUser({
-            id: snapShot.id,
-            ...snapShot.data()
-          })
-        });
-      }
-      setUser(userAuth);
-    })
-    return () => {
-      unsubscribeFromAuth()
-    }
-  }, [])
+  //       userRef.onSnapshot(snapShot => {
+  //         setUser({
+  //           id: snapShot.id,
+  //           ...snapShot.data()
+  //         })
+  //       });
+  //     }
+  //     setUser(userAuth);
+  //   })
+  //   return () => {
+  //     unsubscribeFromAuth()
+  //   }
+  // }, [])
 
 
   return (
     <Provider store={store}>
       <div className='todo'>
         <Router>
-          <Navegacion user = {User}/>
+          <Navegacion/>
           <ScrollToTop>
           <Route
             render={({ location }) => (

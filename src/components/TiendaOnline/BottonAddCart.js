@@ -47,7 +47,6 @@ function BottonAddCart({ producto, detail }) {
     if (!itemsCart.cantidad) {
       itemsCart.cantidad = 0;
     };
-    console.log(itemsCart);
     dispatch({
       type: "AGREGAR_ITEMSCART",
       itemsCart

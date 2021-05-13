@@ -52,9 +52,9 @@ const Footer = ({ handleClick, lista, idLista, idSubtema }) => {
                             <Logo src='/livell.png' alt='livell' />
                             </h5>
                             <ul className="footer-links">
-                                <li><a href='#'><MDBIcon icon='map-marker-alt'/>1734 Stonecoal Road</a></li>
-                                <li><a href='#'><MDBIcon icon='phone'/>+021-95-51-84</a></li>
-                                <li><a href='#'><MDBIcon icon='envelope'/>email@email.com</a></li>
+                                <li><a href='#!'><MDBIcon icon='map-marker-alt'/>1734 Stonecoal Road</a></li>
+                                <li><a href='#!'><MDBIcon icon='phone'/>+021-95-51-84</a></li>
+                                <li><a href='#!'><MDBIcon icon='envelope'/>email@email.com</a></li>
                             </ul>
                         </MDBCol>
                         <hr className="clearfix w-100 d-md-none" />

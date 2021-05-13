@@ -8,7 +8,7 @@ export default function ScrollToTop(props) {
 
     useEffect(() => {
         const localizacionActual = pathname
-            window.scrollTo(0, 0);
+        window.scrollTo(0, 0);
         dispatch({
             type: "CAMBIAR_LOCALIZACION",
             localizacionActual

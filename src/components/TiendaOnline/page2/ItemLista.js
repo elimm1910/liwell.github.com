@@ -30,7 +30,7 @@ function ItemLista({ producto }) {
 
     return (
         <ItemListaStyled>
-            <img onClick={handleClick} src={producto.imagen} className='imgItemLista' />
+            <img onClick={handleClick} src={producto.imagen} className='imgItemLista' alt='' />
             <p>{producto.name}</p>
         </ItemListaStyled>
     );

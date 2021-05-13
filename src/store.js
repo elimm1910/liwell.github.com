@@ -4,10 +4,9 @@ var list = [
     {
         "id": 0,
         "url": 'fondo.png',
-        "title1": 'Salud y Bienestar',
-        "title2": 'Yogui',
+        "title1": 'Health & Wellness',
         "p1": 'web designer/',
-        "p2": 'markurp enginer/',
+        "p2": 'Show me more',
         "button": 'no',
     }
 ];

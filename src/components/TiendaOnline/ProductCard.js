@@ -146,7 +146,7 @@ const ProductCard = ({ toggleOpen }) => {
               <img src={item.imagen} alt="" />
             </ProductImg>
             <ProductBody>
-              <ProductName><a href="#">{item.name}</a></ProductName>
+              <ProductName><a href="#!">{item.name}</a></ProductName>
               <ProductPrice><span>{`${item.cantidad}x`}</span>{`$${item.price}`}</ProductPrice>
             </ProductBody>
             <ButtonDeleted id={item.id} item={item} onClick={handleClickEliminarItem}>X</ButtonDeleted>

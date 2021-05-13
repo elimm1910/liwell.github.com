@@ -45,7 +45,7 @@ function Navbar1() {
         <Navbar1Style>
             <Header>
                 <Link className='logo-container' to="/">
-                    <img style={{ width: '100%' }} src='/livell.png' />
+                    <img style={{ width: '100%' }} src='/livell.png' alt=''/>
                 </Link>
             </Header>
         </Navbar1Style>

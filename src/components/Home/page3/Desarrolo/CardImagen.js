@@ -32,7 +32,8 @@ const ImagenStyled = styled.img`
 
 function CardImagen({ texto, imagen, size }) {
     let classe = '';
-    { size.width > 1000 ? classe = 'cardOfertaDia' : classe = 'cardOfertaDia2' }
+    size.width > 1000 ? classe = 'cardOfertaDia' : classe = 'cardOfertaDia2';
+
     return (
         <CardImagenStyled>
             <CentrarVertical>

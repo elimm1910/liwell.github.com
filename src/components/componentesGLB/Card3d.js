@@ -134,7 +134,7 @@ function Card3d({ collections }) {
                             dragElastic={0.12}
                             whileTap={{ cursor: "grabbing" }}
                         >
-                            <img src={collections.imagen} />
+                            <img src={collections.imagen} alt=''/>
                         </Imagen>
                     </ImageWrapper>
                     <TitleWrapper>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 function ClickOutside(ref, toggleOpen, isOpen) {
     useEffect(() => {

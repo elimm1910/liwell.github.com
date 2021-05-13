@@ -69,7 +69,7 @@ const letter2 = {
 function Card({ idLista, id, title, img, texto, size }) {
 
   let tamanoCard = 0;
-  { size.width > size.height ? tamanoCard = size.height * 0.6 : tamanoCard = size.height * 0.4 }
+  size.width > size.height ? tamanoCard = size.height * 0.6 : tamanoCard = size.height * 0.4;
 
   const dispatch = useDispatch();
 

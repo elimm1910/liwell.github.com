@@ -173,22 +173,22 @@ function Detalles(props) {
       <CardDetalles>
         <MenuTabNab>
           <li>
-            <img src='/creditos.png' />
+            <img src='/creditos.png' alt='' />
             <h4>60 creditos</h4>
             <p>Carga lectiva</p>
           </li>
           <li>
-            <img src='/calendario.png' />
+            <img src='/calendario.png' alt='' />
             <h4>1 año</h4>
             <p>Duracion</p>
           </li>
           <li>
-            <img src='/euro.png' />
+            <img src='/euro.png' alt=''/>
             <h4>13.68 €</h4>
             <p>/ credito</p>
           </li>
           <li>
-            <img src='/euros.png' />
+            <img src='/euros.png' alt=''/>
             <h4>820.8 €</h4>
             <p>Pecio Total</p>
           </li>

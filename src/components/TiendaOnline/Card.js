@@ -90,7 +90,7 @@ function Card() {
       >
         <HeaderCtn variants={sidebar}>
           <Ctn>
-            <a onClick={() => toggleOpen()}>
+            <a onClick={() => toggleOpen()} href='#!'>
               <i className="fa fa-shopping-cart"></i>
               <div>{itemsCart.length}</div>
             </a>

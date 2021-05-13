@@ -17,7 +17,7 @@ function CardVertical({ title, texto, imagen }) {
             <MDBCard testimonial className='mb-2'>
                 <div className="card-up indigo lighten-1"></div>
                 <div className='mx-auto hover zoom sizeImagen'>
-                    <img className='z-depth-1-half sizeImagen' src={imagen} alt='image' />
+                    <img className='z-depth-1-half sizeImagen' src={imagen} alt='' />
                 </div>
                 <MDBCardBody>
                     <h4>{title}</h4>

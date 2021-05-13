@@ -18,7 +18,7 @@ function CursoOnline({texto, imagen, idSubtema}) {
         <CursoOnlineStyled>
             <div className='mt-3 mb-3'>
                 <h1>Online course</h1>
-                <img src={imagen} />
+                <img src={imagen} alt=''/>
                 <p>{texto}</p>
                 <Link to={`${idSubtema}/cursoOnline`} className="btn btn-danger btn-rounded">Join</Link>
             </div>

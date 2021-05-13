@@ -21,7 +21,8 @@ const AcercaStyled = styled.div`
 
 function Acerca({lista, idLista, idSubtema, size}) {
     var class1, class2 = 'positionColum2';
-    {size.width>size.height ? class1='positionColum1' : size.width<size.height && size.width>700  ? class1='positionColum1' : class1= class2='positionColum'}
+    size.width>size.height ? class1='positionColum1' : size.width<size.height && size.width>700  ? class1='positionColum1' : class1= class2='positionColum';
+
     return (
         <AcercaStyled>
             <MDBRow className='mx-auto mt-5'>

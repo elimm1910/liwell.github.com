@@ -77,7 +77,8 @@ const ImagenStyled = styled.img`
 
 function Book({ texto, imagenFront, imagenBack, imagenSide, size }) {
     var height = 0;
-    { size.width > size.height ? height = size.height * 0.4 : height = size.height * 0.7 }
+    size.width > size.height ? height = size.height * 0.4 : height = size.height * 0.7;
+
     return (
         <BookStyled>
                 <h1>Ebook</h1>

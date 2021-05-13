@@ -66,7 +66,8 @@ const firstName = {
 
 function Titulo({ orden, titulo1, p1, p2, size }) {
     var sizeHeigth = 0;
-    { size.width > size.height ? sizeHeigth = size.height * 0.5 : sizeHeigth = size.height * 0.30 }
+    size.width > size.height ? sizeHeigth = size.height * 0.5 : sizeHeigth = size.height * 0.30;
+    
     return (
         <TituloStyled
             initial='initial'
@@ -97,7 +98,7 @@ function Titulo({ orden, titulo1, p1, p2, size }) {
                         >
                             <motion.h1 variants={variants} >{titulo1}</motion.h1>
                             <Division variants={variants}>
-                                <img src='division.png' />
+                                <img src='division.png' alt=''/>
                             </Division>
                             <motion.p variants={variants}>{p1}</motion.p>
                             <motion.p variants={variants}>{p2}</motion.p>
