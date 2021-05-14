@@ -40,7 +40,8 @@ const DialogoStyled = styled.div`
 
 function TiendaOnline(props) {
   const [dialogo, setDialogo] = useState(false);
-  const lista = useSelector((state) => state.lista)
+  const lista = useSelector((state) => state.lista);
+  const size = useSelector((state) => state.size);
   var idLista = props.match.params.photoId;
   var idSubtema = props.match.params.temaId;
 
@@ -57,6 +58,7 @@ function TiendaOnline(props) {
         lista={lista}
         idLista={idLista}
         idSubtema={idSubtema}
+        size={size}
       />
       <NuevosProductos
         lista={lista}

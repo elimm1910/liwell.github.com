@@ -4,7 +4,7 @@ import { MDBRow, MDBCol } from 'mdbreact';
 //componentes
 import Card3d from '../componentesGLB/Card3d';
 
-function Colecciones({ lista, idLista, idSubtema }) {
+function Colecciones({ lista, idLista, idSubtema, size }) {
     return (
         <div className='container'>
             <MDBRow>
@@ -13,6 +13,7 @@ function Colecciones({ lista, idLista, idSubtema }) {
                         <div key={collection.id}>
                             <Card3d
                                 collections={collection}
+                                size={size}
                             />
                         </div>
                     </MDBCol>

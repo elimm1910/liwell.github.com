@@ -98,7 +98,7 @@ img{
 }
 `;
 
-function Card3d({ collections }) {
+function Card3d({ collections, size }) {
 
     const x = useMotionValue(0);
     const y = useMotionValue(0);
@@ -116,6 +116,7 @@ function Card3d({ collections }) {
 
     return (
         <CardWrapper>
+        {size.width > 750 ? 
             <ContainerStyled
                 style={{ x, y, rotateX, rotateY, z: 100 }}
                 drag
@@ -147,6 +148,32 @@ function Card3d({ collections }) {
                     </Link>
                 </BottonContainer>
             </ContainerStyled>
+        :
+        <ContainerStyled
+                style={{ x, y, rotateX, rotateY, z: 100 }}
+            >
+                <TopContainer>
+                    <CircleWrapper>
+                        <Circle />
+                    </CircleWrapper>
+                    <ImageWrapper>
+                        <Imagen
+                            style={{ x, y, rotateX, rotateY, z: 10000 }}
+                        >
+                            <img src={collections.imagen} alt=''/>
+                        </Imagen>
+                    </ImageWrapper>
+                    <TitleWrapper>
+                        <Title>{collections.name}</Title>
+                    </TitleWrapper>
+                </TopContainer>
+                <BottonContainer>
+                    <Link to={`tienda/detalles/${collections.id}`} onClick={handleClick}>
+                        <p>Shop now <i className="fa fa-arrow-circle-right"></i></p>
+                    </Link>
+                </BottonContainer>
+            </ContainerStyled>
+        }
         </CardWrapper>
     );
 }
