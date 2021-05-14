@@ -6,7 +6,7 @@ import { motion, useMotionValue, useTransform } from 'framer-motion';
 import CardBody from './CardBody';
 
 const CardWrapperProductoOnline = styled.div`
-perspective: 200px;
+${'' /* perspective: 2000px; */}
 margin: 0;
 padding: 0;
 outline: none;
