@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const CardWrapper = styled.div`
 width: 100%;
-perspective: 200;
+perspective: 200px;
 display:flex;
 aling-items: center;
 justify-content: center;
