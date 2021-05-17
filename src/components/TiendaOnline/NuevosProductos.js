@@ -10,7 +10,7 @@ margin-top: 5%;
 margin-bottom: 5%;
 `
 
-function NuevosProductos({ lista, idLista, idSubtema }) {
+function NuevosProductos({ lista, idLista, idSubtema, size }) {
     return (
         <NuevosProductosStyled>
             <MenuNav/>
@@ -18,6 +18,7 @@ function NuevosProductos({ lista, idLista, idSubtema }) {
                 lista={lista}
                 idLista={idLista}
                 idSubtema={idSubtema}
+                size={size}
             />
         </NuevosProductosStyled>
     );

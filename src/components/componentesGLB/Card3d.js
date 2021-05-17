@@ -116,7 +116,7 @@ function Card3d({ collections, size }) {
 
     return (
         <CardWrapper>
-        {size.width > 750 ? 
+        {size.width > size.height ? 
             <ContainerStyled
                 style={{ x, y, rotateX, rotateY, z: 100 }}
                 drag

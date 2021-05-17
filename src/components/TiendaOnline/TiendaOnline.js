@@ -64,6 +64,7 @@ function TiendaOnline(props) {
         lista={lista}
         idLista={idLista}
         idSubtema={idSubtema}
+        size={size}
       />
       <HotSection
         image={lista[idLista].subtema[idSubtema].tiendaVirtual.hotSection}

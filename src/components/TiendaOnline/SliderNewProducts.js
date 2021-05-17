@@ -6,7 +6,7 @@ import Slider from "react-slick";
 //componentes
 import CardProductOnline from '../componentesGLB/CardProductOnline';
 
-function SliderNewProducts({ lista, idLista, idSubtema }) {
+function SliderNewProducts({ lista, idLista, idSubtema, size }) {
   const settings = {
     infinite: true,
     speed: 500,
@@ -39,6 +39,7 @@ function SliderNewProducts({ lista, idLista, idSubtema }) {
           <div key={producto} className='p-3 pb-5'>
             <CardProductOnline
               producto={producto}
+              size={size}
             />
           </div>
         )}

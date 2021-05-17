@@ -66,7 +66,7 @@ opacity: 0.1;
 `;
 
 
-function CardProductOnline({ producto }) {
+function CardProductOnline({ producto, size }) {
 
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -75,6 +75,7 @@ function CardProductOnline({ producto }) {
 
   return (
     <CardWrapperProductoOnline>
+    {size.width > size.height ?
       <ContainerProductoOnline
         style={{ x, y, rotateX, rotateY, z: 100 }}
         drag
@@ -101,6 +102,27 @@ function CardProductOnline({ producto }) {
           />
         </CardProduct>
       </ContainerProductoOnline>
+      :
+      <ContainerProductoOnline
+        style={{ x, y, rotateX, rotateY, z: 100 }}
+      >
+        <CardProduct>
+          <CardHeardProductOnline>
+            <ProductImgProductOnline
+              style={{ x, y, rotateX, rotateY, z: 10000 }}
+            >
+              <img src={producto.imagen} alt="Shoe" />
+            </ProductImgProductOnline>
+            <BackTextProductOnline>
+              FAS
+            </BackTextProductOnline>
+          </CardHeardProductOnline>
+          <CardBody
+            producto={producto}
+          />
+        </CardProduct>
+      </ContainerProductoOnline>
+    }
     </CardWrapperProductoOnline>
   );
 }
