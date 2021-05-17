@@ -6,8 +6,7 @@ const ItemListaStyled = styled.div`
 text-align: center;
 padding:5%;
 .imgItemLista{
-    width:100%;
-    ${'' /* height:100%; */}
+    width:auto;
     height:25vh;
     transition: 1s;
     @media only screen and (max-width: 624px) {
@@ -21,7 +20,6 @@ padding:5%;
 function ItemLista({ producto }) {
     const dispatch = useDispatch();
     const handleClick = () => {
-        console.log('cliked')
         dispatch({
           type: "CAMBIAR_PRODUCTO",
           producto
