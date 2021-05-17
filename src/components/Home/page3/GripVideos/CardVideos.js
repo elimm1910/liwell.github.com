@@ -8,9 +8,14 @@ const CardVideosStyled = styled.div`
     position: relative;
     overflow: hidden;
   }
-  .video{
+  video{
     width:100%;
     height:100%;
+  }
+  @media only screen and (max-width: 500px) {
+    p{
+      font-size:small;
+    }
   }
 `
 

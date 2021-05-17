@@ -11,7 +11,6 @@ text-align:center;
 
 function Videos({ lista, idLista, idSubtema, size, handleClickVideo }) {
   const [input, setInput] = useState('');
-  // const [videosListDefault, setVideosListDefault] = useState(lista[idLista].subtema[idSubtema].videos);
   const videosListDefault = lista[idLista].subtema[idSubtema].videos;
   const [videosList, setVideosList] = useState(lista[idLista].subtema[idSubtema].videos);
 
