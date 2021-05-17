@@ -109,7 +109,8 @@ function Detail(props) {
               x: '0',
               y: '-20%',
               width: '100%',
-              height: size.height,
+              height: '100%',
+              // height: size.height,
               transition: { transition },
               opacity: 0.3,
             }}
