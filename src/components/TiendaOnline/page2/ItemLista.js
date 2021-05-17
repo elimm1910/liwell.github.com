@@ -6,7 +6,7 @@ const ItemListaStyled = styled.div`
 text-align: center;
 padding:5%;
 .imgItemLista{
-    width:100%;
+    max-width: 100%;
     height:25vh;
     transition: 1s;
     @media only screen and (max-width: 624px) {
