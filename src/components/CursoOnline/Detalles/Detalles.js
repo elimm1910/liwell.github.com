@@ -196,7 +196,7 @@ function Detalles(props) {
         <RightDetalles>
           <h1>{curso.name}</h1>
           <AuthorDetalles>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL6jRChzZtmtRqmwFnYw-PMlAo0VKN28F_qQ&usqp=CAU" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL6jRChzZtmtRqmwFnYw-PMlAo0VKN28F_qQ&usqp=CAU" alt=''/>
             <h2>{curso.nameProfesor}</h2>
           </AuthorDetalles>
           <SeparatorDetalles />

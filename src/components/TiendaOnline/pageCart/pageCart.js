@@ -77,7 +77,7 @@ function PageCart() {
   const itemsCart = useSelector((state) => state.itemsCart)
 
   var priceTotal = 0;
-  itemsCart.map((item) => {
+  itemsCart.forEach((item) => {
     priceTotal = priceTotal + parseFloat(item.price) * parseFloat(item.cantidad);
   });
 

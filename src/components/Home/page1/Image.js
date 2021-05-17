@@ -32,10 +32,10 @@ const Image = ({ lista, orden, size, clase, localizacion }) => {
     let height = 0;
     let x = 0;
     let y = 0;
-    let tamanoLocalizacionDelay = null;
     let direction = null;
 
     useEffect(() => {
+        let tamanoLocalizacionDelay = null;
         if (tamanoLocalizacion === 2) {
             tamanoLocalizacionDelay = setTimeout(() => {
                 setTamanoLocalizacion(1)
@@ -46,7 +46,7 @@ const Image = ({ lista, orden, size, clase, localizacion }) => {
         return () => {
             clearTimeout(tamanoLocalizacionDelay);
         }
-    }, [])
+    }, [tamanoLocalizacion])
 
 
     if (size.width > size.height) {

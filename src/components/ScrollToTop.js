@@ -13,7 +13,7 @@ export default function ScrollToTop(props) {
             type: "CAMBIAR_LOCALIZACION",
             localizacionActual
         });
-    }, [pathname])
+    }, [pathname, dispatch])
 
     return props.children;
 }

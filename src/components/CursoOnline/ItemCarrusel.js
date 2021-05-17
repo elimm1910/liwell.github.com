@@ -30,7 +30,7 @@ function ItemCarrusel({ curso, active, tamano, size }) {
             active = active + 1;
         }
     }
-    { curso.id === active ? scala = true : scala = false }
+    curso.id === active ? scala = true : scala = false
 
     const dispatch = useDispatch();
 
@@ -48,7 +48,7 @@ function ItemCarrusel({ curso, active, tamano, size }) {
     return (
         <ItemCarruselStyled scala={scala}>
             <Link to={`cursoOnline/${curso.id}/detalles`} onClick={handleClick}>
-                <img src={curso.imagen} ref={refImg} />
+                <img src={curso.imagen} ref={refImg} alt='' />
             </Link>
         </ItemCarruselStyled>
     );

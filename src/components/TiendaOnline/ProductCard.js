@@ -120,11 +120,7 @@ const ProductCard = ({ toggleOpen }) => {
 
   const handleClickEliminarItem = (e) => {
     var idItem = parseInt(e.target.id);
-    itemsCart.map((item) => {
-      if(item.id === idItem){
-        item.cantidad = 0;
-      }
-    })
+    itemsCart.find(item => item.id).cantidad = 0;
     dispatch({
       type: "ELIMINAR_ITEMSCART",
       idItem
@@ -132,7 +128,7 @@ const ProductCard = ({ toggleOpen }) => {
   }
 
   var priceTotal = 0;
-  itemsCart.map((item) => {
+  itemsCart.forEach((item) => {
     priceTotal = priceTotal + parseFloat(item.price) * parseFloat(item.cantidad);
   })
 

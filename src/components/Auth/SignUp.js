@@ -67,16 +67,14 @@ function SignUp({ handleClose }) {
 
     const handleChange = (e) => {
         const { value, name } = e.target;
-        {
-            name === 'displayName' ?
-                setDisplayName(value)
-                : name === 'email' ?
-                    setEmail(value)
-                    : name === 'password' ?
-                        setPassword(value)
-                        :
-                        setConfirmPassword(value)
-        }
+        name === 'displayName' ?
+            setDisplayName(value)
+            : name === 'email' ?
+                setEmail(value)
+                : name === 'password' ?
+                    setPassword(value)
+                    :
+                    setConfirmPassword(value)
     }
 
     return (

@@ -13,7 +13,7 @@ function ClickOutside(ref, toggleOpen, isOpen) {
         return () => {
             document.removeEventListener("mousedown", handleClickOutside);
         }
-    }, [ref, isOpen])
+    }, [ref, isOpen, toggleOpen])
 }
 
 export default ClickOutside;

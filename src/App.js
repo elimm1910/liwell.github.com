@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import { Provider } from 'react-redux';
 // import { HashRouter as Router, Route } from 'react-router-dom';
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
@@ -9,8 +9,6 @@ import 'mdbreact/dist/css/mdb.css';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { MotionLayoutProvider } from "react-motion-layout";
-
-// import { auth, createUserProfileDocument } from './components/Auth/Firebase/firebaseUtil';
 
 //Componentes
 import Navegacion from './components/componentesGLB/Navegacion';
@@ -25,29 +23,6 @@ import CursoOnline from './components/CursoOnline/CursoOnline';
 import Detalles from './components/CursoOnline/Detalles/Detalles';
 
 function App() {
-
-  // const [User, setUser] = useState(null);
-  // var unsubscribeFromAuth = null;
-  // useEffect(() => {
-  //   unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
-  //     if (userAuth) {
-  //       const userRef = await createUserProfileDocument(userAuth);
-
-  //       userRef.onSnapshot(snapShot => {
-  //         setUser({
-  //           id: snapShot.id,
-  //           ...snapShot.data()
-  //         })
-  //       });
-  //     }
-  //     setUser(userAuth);
-  //   })
-  //   return () => {
-  //     unsubscribeFromAuth()
-  //   }
-  // }, [])
-
-
   return (
     <Provider store={store}>
       <div className='todo'>
