@@ -49,7 +49,7 @@ const StripeCheckoutButton = ({ price }) => {
             name='Livell'
             billingAddress
             shippingAddress
-            image='/logo.png'
+            image='/yoga.svg'icono de stripe
             description={`Your total is $${price}`}
             amount={priceForStripe}
             panelLabel='Pay Now'
